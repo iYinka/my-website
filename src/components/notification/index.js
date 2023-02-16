@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles/Notification.module.css";
-import Victor from "../../assets/victor2.JPG";
+import Victor from "../../assets/victor.jpeg";
 
 const NotifyMe = () => {
     return (
