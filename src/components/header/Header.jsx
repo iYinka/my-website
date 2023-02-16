@@ -1,10 +1,9 @@
-import React from 'react'
-import Typical from 'react-typical'
-import './header.css'
-import CTA from './CTA'
-import Victor from '../../assets/victor2.JPG'
-import Victor1 from '../../assets/victor1.JPG'
-import SocialIcons from '../socialicons/SocialIcons'
+import React from "react";
+import "./header.css";
+import CTA from "./CTA";
+import Victor from "../../assets/victor2.JPG";
+import Victor1 from "../../assets/victor1.JPG";
+import SocialIcons from "../socialicons/SocialIcons";
 import BigName from "./big_name";
 import GooeyEffect from "./gooey_effect";
 
