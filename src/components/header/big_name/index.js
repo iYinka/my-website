@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./BigName.module.css";
 import SubName from "./SubName";
+
 const BigName = () => {
     return (
         <div>

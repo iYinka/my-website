@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { urlFor, client } from "../../client";
 import "./experience.css";
-import { BsFillCheckCircleFill } from "react-icons/bs";
 import SkillsCard from "./skills card/skillsCard";
 
 const Experience = () => {

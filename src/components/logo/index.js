@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Logo.module.css";
-import SubName from "./../header/big_name/SubName";
 
 export const Logo = () => {
     const [show, handleShow] = useState(false);
-    const [showSubname, handleShowSubname] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.scrollY > 100) {
                 handleShow(true);
             } else handleShow(false);
-            if (window.scrollY > 200) {
-                handleShowSubname(true);
-            } else handleShowSubname(false);
         });
         return () => {
             window.removeEventListener("scroll");

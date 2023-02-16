@@ -1,6 +1,5 @@
 import React from "react";
 import "./experience.css";
-import { BsFillCheckCircleFill } from "react-icons/bs";
 import SkillsCard from "./skills card/_skillsCard";
 
 const Experience = () => {

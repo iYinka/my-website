@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.css'
-import SocialIcons from '../socialicons/SocialIcons'
-import { WaveBackground } from '../../App'
+import SocialIcons from "../socialicons/SocialIcons";
 
 
 

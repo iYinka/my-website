@@ -3,9 +3,7 @@ import "./contact.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { BsEnvelope } from "react-icons/bs";
-import { FaHatWizard } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
-import { message, notification } from "antd";
 import NotifyMe from "../notification";
 
 const Contact = () => {

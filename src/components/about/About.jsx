@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './about.css'
-import Victor from '../../assets/victor2.JPG'
+import "./about.css";
 import {GiNinjaHead} from 'react-icons/gi'
 import {GoOrganization} from 'react-icons/go'
 import { GrCloudSoftware } from "react-icons/gr";
-import { urlFor, client } from "../../client";
-import { motion, Variants } from "framer-motion";
+import { client } from "../../client";
+import { motion } from "framer-motion";
 
 const imageAnimate = {
     //   offscreen:{x:100, opacity:0},

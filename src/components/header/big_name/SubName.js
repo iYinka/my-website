@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./BigName.module.css";
-import { urlFor, client } from "../../../client";
+import { client } from "../../../client";
 
 const SubName = () => {
     const [listSkills, setListSkills] = useState([]);

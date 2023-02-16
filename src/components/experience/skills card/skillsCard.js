@@ -1,16 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./skillsCard.css";
-import { urlFor, client } from "../../../client";
 
 const SkillsCard = (props) => {
-    const [skillsData, setSkillsData] = useState([]);
-
-    useEffect(() => {
-        const query = '*[_type == "skills"]';
-
-        client.fetch(query).then((data) => setSkillsData(data));
-    }, []);
-
     return (
         <>
             <div class="skill-card" key={props.key}>

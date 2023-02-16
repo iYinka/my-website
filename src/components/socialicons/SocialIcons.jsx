@@ -1,11 +1,4 @@
-import React from 'react'
-// import './socialicons.css'
-import {BsFacebook} from 'react-icons/bs'
-import {BsInstagram} from 'react-icons/bs'
-import {BsLinkedin} from 'react-icons/bs'
-import {BsTwitter} from 'react-icons/bs'
-import {BsYoutube} from 'react-icons/bs'
-import {BsGithub} from 'react-icons/bs'
+import React from "react";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import facebook from "react-useanimations/lib/facebook";
@@ -65,4 +58,4 @@ const SocialIcons = (props) => {
     );
 };
 
-export default SocialIcons
+export default SocialIcons;
