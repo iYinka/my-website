@@ -7,7 +7,7 @@ import GooeyEffect from "./gooey_effect";
 
 export default function Header() {
     return (
-        <header>
+        <header id="home">
             <div className="container header__container">
                 <h5 className="text-light">Hello! I am </h5>
                 <div className="imported-effects">

@@ -53,31 +53,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-{
-    /* <article key={_id} className="portfolio__item">
-    <div className="portfolio__item-image">
-        <img src={urlFor(imgUrl)} className="image" alt={title} />
-    </div>
-    <h3>{title}</h3>
-    <h6>{tags}</h6>
-    <div className="portfolio__item-cta">
-        <a
-            href={codeLink}
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Github
-        </a>
-        <a
-            href={projectLink}
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Site
-        </a>
-    </div>
-</article>; */
-}
