@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* html,
+body {
+    height: 100%;
+    font-weight: 800;
+}
+
+body {
+    background: yellow;
+    font-family: Arial;
+} */
+
+.logo {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    /* Animations */
+    transition-timing-function: ease-in;
+    transition: all 0.9s;
+    z-index: 3;
+}
+
+.logo svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 200px;
+    height: 100px;
+    /* margin: 0 auto; */
+}
+
+
+.nav__trans {
+    background: rgba(167, 161, 161, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px blur rgba(255, 255, 255, 0.18);
+}
+
+.text__copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text__copy:nth-child(1) {
+    stroke: #30536c;
+    animation-delay: -1;
+}
+
+.text__copy:nth-child(2) {
+    stroke: #16a085;
+    animation-delay: -2s;
+}
+
+.text__copy:nth-child(3) {
+    stroke: #fff;
+    animation-delay: -3s;
+}
+
+.text__copy:nth-child(4) {
+    stroke: #fff;
+    animation-delay: -4s;
+}
+
+.text__copy:nth-child(5) {
+    stroke: #537FE7;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .logo {
+        width: 100%;
+    } */
+}

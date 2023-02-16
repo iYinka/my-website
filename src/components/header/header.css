@@ -1,0 +1,150 @@
+header {
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.header__container p {
+    color: var(--color-white);
+    font-weight: 900 !important;
+}
+
+/* CTA */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/* SocialIcons */
+
+.header__socialicons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 3.5rem;
+
+}
+
+.header__socialicons::after {
+    content: '';
+    width: 1px;
+    height: 3rem;
+    background: var(--color-primary);
+
+}
+
+/* Picture */
+.me {
+    /* width: 30rem;
+    height: 30rem;
+    position: absolute;
+    */
+    left: calc(50% - 15rem);
+    margin-top: 5rem;
+    border-radius: 4rem;
+    overflow: hidden;
+    padding: 1rem;
+
+}
+.scroll__down {
+    position: absolute;
+    right: -1.3rem;
+    bottom: 3.5rem;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+/* Media queries MD Devices */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+
+    }
+}
+
+/* Media queries SM Devices */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+    .header__socialicons {
+        display: block;
+        position: relative;
+        bottom: 0px;
+        margin-top: 2rem;
+    }
+
+    .header__socialicons>a {
+        padding: 1rem;
+    }
+
+    .scroll__down {
+        display: none;
+    }
+
+    .me {
+        margin-top: .5rem;
+    }
+}
+
+
+/* FLIP */
+.me {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    float: left;
+    perspective: 500px;
+}
+
+.content {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.me:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: #03446A;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* Effects */
+.imported-effects {
+    display: flex;
+    justify-content: space-between;
+}

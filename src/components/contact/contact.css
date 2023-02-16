@@ -1,0 +1,113 @@
+.container.contact__container {
+    width: 58%;
+    display:grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact__options {
+    display:flex;
+    flex-direction:column;
+    gap: 1.2rem;
+}
+.contact__option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.contact__option  {
+    margin-top: .7rem;
+    display: inline-block;
+    font-size: .9rem;
+}
+
+/* Blinker */
+.contact__option a {
+    animation: blinker 1.5s linear infinite;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 600;
+    color: #C3F8FF;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Blinker ends */
+
+form {
+    margin-top: .7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white)
+
+}
+
+
+/* Media queries MD */
+
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Media queries SM */
+
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-sm);
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    }
+.alert {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

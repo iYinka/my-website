@@ -1,0 +1,262 @@
+/* RIPPLE BACKGROUND */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    bottom: -50px;
+}
+
+.medium {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+
+.large {
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+
+.xlarge {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+
+.xxlarge {
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+
+.shade1 {
+    opacity: 0.2;
+}
+
+.shade2 {
+    opacity: 0.5;
+}
+
+.shade3 {
+    opacity: 0.7;
+}
+
+.shade4 {
+    opacity: 0.8;
+}
+
+.shade5 {
+    opacity: 0.9;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+/* RIPPLE BACKGROUND end */
+
+/* WaveBackground */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    /* From https://css.glass */
+    background: rgba(97, 115, 195, 0.34);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(66, 64, 64, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    /* border: 1px solid rgba(16, 15, 15, 0.12); */
+    width: 100%;
+}
+
+
+
+.inner-header {
+    height: 40vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.logo {
+    /* width: 50px; */
+    background-color: none !important;
+    /* padding-right: 15px; */
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100%;
+    max-height: 150px;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* WaveBackground ends */
+
+
+.scroll {
+    position: absolute;
+    right: 5rem;
+    bottom: 3.5rem;
+    transform: rotate(90deg);
+
+}
+
+@media screen and (max-width: 600px) {
+    .scroll {
+        display: none;
+    }
+
+    .permalinks {
+        flex-direction: column;
+        gap: 1.3rem;
+
+    }
+
+}
+
+.permalinks {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 2rem auto;
+    cursor: pointer !important;
+
+}
+
+.permalinks .link {
+    transition: 0.3s ease;
+    /* background: rgba(97, 115, 195, 0.34); */
+    color: #ffffff;
+    text-decoration: none;
+    /* border-top: 4px solid rgba(63, 69, 98, 0.34);
+    border-bottom: 4px solid rgba(77, 90, 148, 0.34); */
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.permalinks .link:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 3px 0;
+}
