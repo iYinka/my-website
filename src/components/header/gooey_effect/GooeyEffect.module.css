@@ -247,3 +247,10 @@
         transform: translate(0.0000553745px, 99.9999886188px);
     }
 }
+/* Media Queries SM */
+@media screen and (max-width: 760px) {
+    /* .circle__container {
+        width: 150px;
+        height: 150px;
+    } */
+}

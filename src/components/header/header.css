@@ -77,10 +77,12 @@ header {
         height: 100vh;
     }
     .header__socialicons {
-        display: block;
+        display: none;
+        /* display: block;
         position: relative;
         bottom: 0px;
         margin-top: 2rem;
+        */
     }
 
     .header__socialicons>a {
