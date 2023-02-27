@@ -85,9 +85,17 @@
 
 /* Media Queries SM */
 @media screen and (max-width: 600px) {
+    .about__container {
+        display: contents;
+        grid-template-columns: 35% 50%;
+        gap: 15%;
+
+    }
+
     .about__me {
-        width: 50%;
-        margin: 1rem auto 2.5rem;
+        display: none;
+        /* width: 50%;
+        margin: 1rem auto 2.5rem; */
     }
     /* .about__cards {
         grid-template-columns: 1fr 1fr;
