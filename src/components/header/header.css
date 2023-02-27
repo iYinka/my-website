@@ -13,6 +13,17 @@ header {
     color: var(--color-white);
     font-weight: 900 !important;
 }
+/* Effects */
+.imported-effects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imported-effects-2 {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* CTA */
 .cta {
@@ -72,6 +83,12 @@ header {
 }
 
 /* Media queries SM Devices */
+@media screen and (min-width: 600px) {
+    .imported-effects-2 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
         height: 50vh;
@@ -96,6 +113,11 @@ header {
     .me {
         margin-top: .5rem;
     }
+.imported-effects {
+    display: none;
+}
+
+.imported-effects-2 {}
 }
 
 
@@ -144,9 +166,4 @@ header {
     background: #03446A;
     color: white;
     transform: rotateY(180deg);
-}
-/* Effects */
-.imported-effects {
-    display: flex;
-    justify-content: space-between;
 }

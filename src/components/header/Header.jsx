@@ -14,6 +14,9 @@ export default function Header() {
                     <BigName />
                     <GooeyEffect />
                 </div>
+                <div className="imported-effects-2">
+                    <BigName />
+                </div>
                 <CTA />
                 <SocialIcons position="header__socialicons" />
 
