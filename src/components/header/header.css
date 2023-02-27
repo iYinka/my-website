@@ -91,7 +91,7 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 50vh;
+        height: 70vh;
     }
     .header__socialicons {
         display: none;
