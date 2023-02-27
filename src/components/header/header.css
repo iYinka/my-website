@@ -74,7 +74,7 @@ header {
 /* Media queries SM Devices */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 50vh;
     }
     .header__socialicons {
         display: none;

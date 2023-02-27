@@ -78,6 +78,9 @@
     .about__content p {
         margin: 1.2rem 0 1.6rem;
     }
+    .about__cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Media Queries SM */
@@ -86,10 +89,12 @@
         width: 50%;
         margin: 1rem auto 2.5rem;
     }
-    .about__cards {
+    /* .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+
+    */
     .about__content {
         text-align: center;
         padding: 2rem;

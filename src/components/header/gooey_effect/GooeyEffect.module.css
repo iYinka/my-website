@@ -249,8 +249,14 @@
 }
 /* Media Queries SM */
 @media screen and (max-width: 760px) {
-    /* .circle__container {
-        width: 150px;
-        height: 150px;
-    } */
+    .circle__container {
+        width: 100px;
+        height: 100px;
+    }
+    }
+
+    @media screen and (max-width: 550px) {
+        .circle__container {
+            display: none;
+        }
 }
