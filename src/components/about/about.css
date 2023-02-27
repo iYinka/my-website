@@ -72,8 +72,8 @@
     color: rgba(255, 255, 255, .70);
 
 /* Animation */
-    animation: animated-text 4s steps(29, end) 1s 1 normal both,
-        animated-cursor 600ms steps(29, end) infinite;
+    animation: animated-text 4s steps(50, end) 1s 1 normal both,
+    animated-cursor 600ms steps(50, end) infinite;
 }
 
 /* text animation */
