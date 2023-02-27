@@ -31,8 +31,3 @@ nav a.active {
     color: var(--color-bg);
 
 }
-@media screen and (max-width: 600px) {
-    .nav {
-        display: none;
-    }
-}
