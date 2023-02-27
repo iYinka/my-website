@@ -59,24 +59,19 @@
     color: var(--color-light);
 }
 
+/* Description */
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-white);
     font-weight: 300;
-}
-
-/* Description */
-.description {
     border-right: solid 3px rgba(0, 255, 0, .75);
     /* white-space: nowrap; */
     overflow: hidden;
     font-family: 'Source Code Pro', monospace;
     font-size: 12px;
     color: rgba(255, 255, 255, .70);
-}
 
 /* Animation */
-.description {
     animation: animated-text 4s steps(29, end) 1s 1 normal both,
         animated-cursor 600ms steps(29, end) infinite;
 }
@@ -89,7 +84,7 @@
     }
 
     to {
-        width: 472px;
+        width: 100%;
     }
 }
 
