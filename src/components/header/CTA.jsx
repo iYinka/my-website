@@ -1,13 +1,17 @@
 import React from 'react'
 import UseAnimations from "react-useanimations";
 import download from "react-useanimations/lib/download";
-import olayinka from "../../assets/olayinka.pdf";
+import olayinka from "../../assets/olayinkavictor_resume.pdf";
 import { FcDocument } from "react-icons/fc";
 
 const CTA = () => {
     return (
         <div className="cta">
-            <a class="tooltip" href={olayinka} download="olayinka.pdf">
+            <a
+                class="tooltip"
+                href={olayinka}
+                download="olayinkavictor_resume.pdf"
+            >
                 <span class="tooltiptext">
                     <b>
                         <FcDocument />
