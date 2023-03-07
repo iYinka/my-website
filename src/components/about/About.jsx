@@ -76,7 +76,7 @@ const About = () => {
         {
             icon: <GiNinjaHead className="about__icon" />,
             h5: "Experience",
-            small: "+3 years and still counting",
+            small: "Exponential increase in valuable expertise and development.",
         },
         {
             icon: <GrCloudSoftware className="about__icon" />,
