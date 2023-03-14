@@ -16,14 +16,22 @@ const PortfolioCard = (props) => {
                         <div class="card--social">
                             <ul>
                                 <li class="github">
-                                    <a href={props.codeLink}>
+                                    <a
+                                        href={props.codeLink}
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
                                         <i>
                                             <AiFillGithub />
                                         </i>
                                     </a>
                                 </li>
                                 <li class="site">
-                                    <a href={props.projectLink}>
+                                    <a
+                                        href={props.projectLink}
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
                                         <i>
                                             <GoGlobe />
                                         </i>
@@ -57,7 +65,11 @@ const PortfolioCard = (props) => {
                             <p>{props.description}</p>
                         </div>
                         <div class="card--btn">
-                            <a href={props.projectLink}>
+                            <a
+                                href={props.projectLink}
+                                target="_blank"
+                                rel="noopener"
+                            >
                                 <span class="moreinfo">
                                     <i class="fa fa-info-circle"></i> More Info
                                 </span>
