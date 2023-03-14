@@ -19,7 +19,7 @@ const PortfolioCard = (props) => {
                                     <a
                                         href={props.codeLink}
                                         target="_blank"
-                                        rel="noopener"
+                                        rel="noreferrer"
                                     >
                                         <i>
                                             <AiFillGithub />
@@ -30,7 +30,7 @@ const PortfolioCard = (props) => {
                                     <a
                                         href={props.projectLink}
                                         target="_blank"
-                                        rel="noopener"
+                                        rel="noreferrer"
                                     >
                                         <i>
                                             <GoGlobe />
@@ -68,7 +68,7 @@ const PortfolioCard = (props) => {
                             <a
                                 href={props.projectLink}
                                 target="_blank"
-                                rel="noopener"
+                                rel="noreferrer"
                             >
                                 <span class="moreinfo">
                                     <i class="fa fa-info-circle"></i> More Info
